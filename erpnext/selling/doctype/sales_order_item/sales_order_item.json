@@ -875,7 +875,7 @@
    "fieldname": "target_warehouse", 
    "fieldtype": "Link", 
    "hidden": 0, 
-   "ignore_user_permissions": 0, 
+   "ignore_user_permissions": 1, 
    "in_filter": 0, 
    "in_list_view": 0, 
    "label": "Target Warehouse", 
@@ -1288,8 +1288,14 @@
  "issingle": 0, 
  "istable": 1, 
  "max_attachments": 0, 
+<<<<<<< HEAD
  "modified": "2015-12-11 18:15:01.054583", 
  "modified_by": "jaydev@4devnet.com", 
+=======
+ "menu_index": 0, 
+ "modified": "2015-12-11 14:53:24.444343", 
+ "modified_by": "Administrator", 
+>>>>>>> bdd1ee2185cd1446aa591bfbef265d2c3f5d8420
  "module": "Selling", 
  "name": "Sales Order Item", 
  "owner": "Administrator", 
@@ -1297,5 +1303,6 @@
  "read_only": 0, 
  "read_only_onload": 0, 
  "sort_field": "modified", 
- "sort_order": "DESC"
+ "sort_order": "DESC", 
+ "version": 0
 }

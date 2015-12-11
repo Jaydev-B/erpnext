@@ -7,7 +7,7 @@ app_publisher = "Frappe Technologies Pvt. Ltd."
 app_description = """ERP made simple"""
 app_icon = "icon-th"
 app_color = "#e74c3c"
-app_version = "6.11.3"
+app_version = "6.12.11"
 app_email = "info@erpnext.com"
 app_license = "GNU General Public License (v3)"
 source_link = "https://github.com/frappe/erpnext"
@@ -111,6 +111,9 @@ doc_events = {
 	"Price List": {
 		"on_update": "erpnext.shopping_cart.doctype.shopping_cart_settings.shopping_cart_settings.validate_cart_settings"
 	},
+	"Address": {
+		"validate": "erpnext.shopping_cart.cart.set_customer_in_address"
+	}
 }
 
 scheduler_events = {
@@ -122,7 +125,8 @@ scheduler_events = {
 		"erpnext.setup.doctype.email_digest.email_digest.send",
 		"erpnext.support.doctype.issue.issue.auto_close_tickets",
 		"erpnext.accounts.doctype.fiscal_year.fiscal_year.auto_create_fiscal_year",
-		"erpnext.hr.doctype.employee.employee.send_birthday_reminders"
+		"erpnext.hr.doctype.employee.employee.send_birthday_reminders",
+		"erpnext.projects.doctype.task.task.set_tasks_as_overdue"
 	]
 }
 
